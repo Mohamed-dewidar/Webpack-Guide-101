@@ -9,7 +9,8 @@
     "prod": "npm run webpack -- --mode production",
     "dev": "npm run webpack -- --env.mode development",
     "prod:debug": "npm run debug -- --mode production",
-    "dev:debug": "npm run debug -- --mode development"
+    "dev:debug": "npm run debug -- --mode development",
+    "dev:server": "npm run webpack-dev-server -- --env.mode development"
   },
   "repository": {
     "type": "git",
@@ -32,12 +33,13 @@
     "mini-css-extract-plugin": "^0.8.0",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
-    "typescript": "^3.5.3",
     "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
     "url-loader": "^2.1.0",
     "webpack": "^4.39.1",
     "webpack-bundle-analyzer": "^3.4.1",
     "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^4.15.1",
     "webpack-node-externals": "^1.7.2",
     "workbox-webpack-plugin": "^4.3.1"
   },

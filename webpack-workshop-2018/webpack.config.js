@@ -1,5 +1,6 @@
 const path = require('path');
 const ConsoleLogOnBuildWebpackPlugin = require('./ConsoleLogOnBuildWebpackPlugin.js');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack'); //to access built-in plugins
 
 module.exports = env => {
@@ -19,6 +20,6 @@ module.exports = env => {
         },
       ],
     },
-    plugins: [new webpack.ProgressPlugin(), new ConsoleLogOnBuildWebpackPlugin()],
+    plugins: [new webpack.ProgressPlugin(), new ConsoleLogOnBuildWebpackPlugin(), new HtmlWebpackPlugin()],
   };
 };

@@ -1,5 +1,9 @@
 # Core Concepets
 
+## Some Articles for read
+
+- [The Core Concepts of Webpack](https://mvskiran.medium.com/the-core-concepts-of-webpack-customing-webpack-414483a86fb7)
+
 ## Entry
 
 The point or points where to start the application bundling process.

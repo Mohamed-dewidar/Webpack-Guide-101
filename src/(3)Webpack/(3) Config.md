@@ -32,6 +32,31 @@ If for some reason you want to use a different configuration file depending on c
 }
 ```
 
+## Passing variables to your configuration
+
+```bash
+npm run webpack -- --env.mode development
+```
+
+setting `--env.mode` the value of the mode variable to `development`
+
+### using env in Webpack Configuration
+
+**webpack.config.js**
+
+```javascript
+module.exports = env => {
+  conole.log(env);
+
+  return {
+    mode: env.mode,
+    // other configuration...
+  };
+};
+```
+
+Using this we can apply certain plugins or rules depending on the mode
+
 ## Config file options
 
 | Option   | Description                                                                                          | Value                                 |
